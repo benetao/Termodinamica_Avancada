@@ -101,12 +101,9 @@ As ferramentas utilizadas para desenvolver o projeto dessa disciplina foram, pri
 ## Progresso <a name="progresso"></a>
 
 - [x] Desafio 1
-    - [x] Experimento A.02
-    - [x] Experimento A.03
-    - [ ] Experimento A.04
-    - [ ] Experimento A.05
-    - [ ] Experimento A.06
-    - [ ] Experimento A.07
+    - [x] Definição da Mistura
+    - [x] Definição da Entalpia da Mistura
+    - [x] Definição do Diagrama de Fases da Mistura
     
 - [ ] Desafio 2
     - [ ] Experimento ...
@@ -148,9 +145,9 @@ Sem a ajuda do professor e das glias dessa disciplina, eu não teria conseguido 
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://user-images.githubusercontent.com/106626661/225807702-e7160618-f41a-4dd9-9fe7-b1bb6b3b79f9.png" width="100px;" alt="Foto do Prof"/><br>
+        <img src="https://user-images.githubusercontent.com/106626661/226685894-701a7c74-396c-4a82-9920-7488b3095fb7.png" width="100px;" alt="Foto do Prof"/><br>
         <sub>
-          <b>Daniel Cassar (Professor)</b>
+          <b>Amauri de Paula (Professor)</b>
         </sub>
       </a>
     </td>
@@ -158,7 +155,7 @@ Sem a ajuda do professor e das glias dessa disciplina, eu não teria conseguido 
       <a href="#">
         <img src="https://user-images.githubusercontent.com/106626661/225807900-f34e75aa-cb89-43c7-9747-63f9eb6eec7b.png" width="100px;" alt="Foto do Pepe"/><br>
         <sub>
-          <b>Pedro Sophia (Glia)</b>
+          <b>Pedro Sophia</b>
         </sub>
       </a>
     </td>
@@ -166,7 +163,7 @@ Sem a ajuda do professor e das glias dessa disciplina, eu não teria conseguido 
       <a href="#">
         <img src="https://user-images.githubusercontent.com/106626661/225808282-8a7219bc-77e7-4626-a5f4-d80ea97c755d.png" width="100px;" alt="Foto do Gui"/><br>
         <sub>
-          <b>Guilherme Dariani (Glia) </b>
+          <b>Guilherme Dariani </b>
         </sub>
       </a>
     </td>
