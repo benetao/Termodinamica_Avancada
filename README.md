@@ -109,11 +109,7 @@ As ferramentas utilizadas para desenvolver o projeto dessa disciplina foram, pri
     - [ ] Experimento ...
     - [ ] Experimento ...
 
-Veja a pasta [Algorítmos Genéticos](https://github.com/benetao/Redes_Neurais_Isabela_Beneti/tree/main/AlgoritmosGeneticos) para ver os experimentos relacionados a esse tema.
-
-Já na pasta [Redes Neurais](https://github.com/benetao/Redes_Neurais_Isabela_Beneti/tree/main/RedesNeurais), você encontrará os experimentos mais recentes.
-
-
+Veja as pastas [Desafio 1](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%201), [Desafio 2](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%202), [Desafio 3](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%203) para ver os notebooks e arquivos dos respectivos desafios.
 <!-- Sobre mim -->
 ## Sobre nós
 
