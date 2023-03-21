@@ -115,16 +115,15 @@ Já na pasta [Redes Neurais](https://github.com/benetao/Redes_Neurais_Isabela_Be
 
 
 <!-- Sobre mim -->
-## Sobre mim
+## Sobre nós
 
-Quem é a aluna por trás desse prejeto de RNAG? Pois bem, deixe-me apresentar:
+Quem são os alunos por trás desse projeto de Termodinâmica Avançada? Pois bem, permita-nos nos apresentar:
 
-- 🙋‍♀️ Meu nome é Isabela Bento Beneti
-- 💜 Sou graduanda do Bacharelado em Ciência e Tecnologia da Ilum Escola de Ciência
-- 👾 Atualmente, curso o terceiro semestre da faculdade
-- 🟣 Tenho interesse e já estou envolvida em projetos na área de Ciências da Vida
-- 🙆‍♀️ Você pode me contatar pelo email isabela220039@ilum.cnpem.br ou outro meio citado abaixo
-  <img align="right"  src="https://user-images.githubusercontent.com/106626661/193426485-7901d706-9c84-4afd-9e91-e5b39dbdfd61.png">
+👋 Somos Gabriel Pereira e Isabela Beneti
+📕 Estamos no terceiro semestre do Bacharelado em Ciência e Tecnologia da Ilum Escola de Ciência
+👨‍🔬 A Ilum é uma iniciativa da instituição social CNPEM (Centro Nacional de Pesquisa em Energia e Materiais)
+🔥 No curso, temos uma grade curricular bem interdisciplinar, que inclui a matéria de Termodinâmica Avançada
+🚗 Nosso objetivo, nessa disciplina, é compreender melhor processos termodinâmicos e suas aplicações na vida real
 
 <!-- CONTATO -->
 ### Contatos <a name="contato"></a>
@@ -139,7 +138,7 @@ Quem é a aluna por trás desse prejeto de RNAG? Pois bem, deixe-me apresentar:
 <!-- ACKNOWLEDGMENTS -->
 ## Agradecimentos <a name="acknowledgments"></a>
 
-Sem a ajuda do professor e das glias dessa disciplina, eu não teria conseguido chegar até onde cheguei! Por isso, agradeço às seguintes pessoas que contribuíram para este projeto:
+Sem a ajuda dos professores e técnicos da Ilum, nós não teriamos conseguido chegar até onde cheguamos! Por isso, agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 <table>
   <tr>
@@ -153,17 +152,17 @@ Sem a ajuda do professor e das glias dessa disciplina, eu não teria conseguido 
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://user-images.githubusercontent.com/106626661/225807900-f34e75aa-cb89-43c7-9747-63f9eb6eec7b.png" width="100px;" alt="Foto do Pepe"/><br>
+        <img src="https://user-images.githubusercontent.com/106626661/226698669-e1b3521b-5f37-4d02-85a4-8a71cfcd694d.png" width="100px;" alt="Foto do Pepe"/><br>
         <sub>
-          <b>Pedro Sophia</b>
+          <b>Felipe Crasto (Professor)</b>
         </sub>
       </a>
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://user-images.githubusercontent.com/106626661/225808282-8a7219bc-77e7-4626-a5f4-d80ea97c755d.png" width="100px;" alt="Foto do Gui"/><br>
+        <img src="https://user-images.githubusercontent.com/106626661/226698185-db45afae-5bb1-4f08-aef7-6161738d9c5e.png" width="100px;" alt="Foto do Gui"/><br>
         <sub>
-          <b>Guilherme Dariani </b>
+          <b>Alessandro Mourato (Técnico)</b>
         </sub>
       </a>
     </td>
