@@ -119,11 +119,11 @@ Já na pasta [Redes Neurais](https://github.com/benetao/Redes_Neurais_Isabela_Be
 
 Quem são os alunos por trás desse projeto de Termodinâmica Avançada? Pois bem, permita-nos nos apresentar:
 
-👋 Somos Gabriel Pereira e Isabela Beneti
-📕 Estamos no terceiro semestre do Bacharelado em Ciência e Tecnologia da Ilum Escola de Ciência
-👨‍🔬 A Ilum é uma iniciativa da instituição social CNPEM (Centro Nacional de Pesquisa em Energia e Materiais)
-🔥 No curso, temos uma grade curricular bem interdisciplinar, que inclui a matéria de Termodinâmica Avançada
-🚗 Nosso objetivo, nessa disciplina, é compreender melhor processos termodinâmicos e suas aplicações na vida real
+- 👋 Somos Gabriel Pereira e Isabela Beneti
+- 📕 Estamos no terceiro semestre do Bacharelado em Ciência e Tecnologia da Ilum Escola de Ciência
+- 👨‍🔬 A Ilum é uma iniciativa da instituição social CNPEM (Centro Nacional de Pesquisa em Energia e Materiais)
+- 🔥 No curso, temos uma grade curricular bem interdisciplinar, que inclui a matéria de Termodinâmica Avançada
+- 🚗 Nosso objetivo, nessa disciplina, é compreender melhor processos termodinâmicos e suas aplicações na vida real
 
 <!-- CONTATO -->
 ### Contatos <a name="contato"></a>
