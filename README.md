@@ -88,7 +88,7 @@ Ao longo do desenvolvimento do problema representado na imagem abaixo, nós sele
 
 ### Ferramentas <a name="ferramentas"></a>
 
-As ferramentas utilizadas para desenvolver o projeto dessa disciplina foram, principalmente, as plataformas Github e Jupyter Notebook, em que escrevemos os cótigos usando a  linguagem Pyhton.
+As ferramentas utilizadas para desenvolver o projeto dessa disciplina foram, principalmente, as plataformas Github e Jupyter Notebook, em que escrevemos os códigos usando a  linguagem Pyhton.
 </div>
 <div align="center">
 <img align="center" alt="Rafa-Python" height="60" width="60" src= https://user-images.githubusercontent.com/106626661/225802391-d24ac038-78b1-4b2d-8720-f5f9fb4dac9a.png>
