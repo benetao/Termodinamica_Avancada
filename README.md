@@ -48,7 +48,7 @@
         <li><a href="#ferramentas">Ferramentas</a></li>
       </ul>
     </li>
-    <li><a href="#progresso">Progresso</a></li>
+    <li><a href="#progresso">Progresso do Projeto</a></li>
     <li>
       <a href="#isa">Sobre nós</a>
       <ul>
@@ -98,16 +98,37 @@ As ferramentas utilizadas para desenvolver o projeto dessa disciplina foram, pri
 
 
 <!-- Progresso -->
-## Progresso <a name="progresso"></a>
+## Progresso do Projeto <a name="progresso"></a>
 
-- [x] Desafio 1
+- [x] Desafio 1: Definir a mistura combustível
     - [x] Definição da Mistura
     - [x] Definição da Entalpia da Mistura
     - [x] Definição do Diagrama de Fases da Mistura
     
-- [ ] Desafio 2
-    - [ ] Experimento ...
-    - [ ] Experimento ...
+- [ ] Desafio 2: Determinar parâmetros termodinâmicos envolvidos na combustão
+    - [ ] Determinação do volume da mistura de líquidos
+    - [ ] Determinação da separação da mistura
+    - [ ] Determinação da não-idealidade das misturas
+    - [ ] Determinação da temperatura mínima de ebulição da mistura
+    - [ ] Determinação de potenciais termodinâmicaos da reação de cobustão
+    
+- [ ] Desafio 3: Fazer balanço estequiométrico e energético até etapa de aquecimento do boiler
+    - [ ] Cálculo da quantidade de energia transferida para a caldeira
+    - [ ] Consideração da quantidade de reagentes usados na combustão
+    - [ ] Consideração das reações envolvidas na combustão
+
+- [ ] Desafio 4: Modelar ciclo termodinâmico que alimenta o gerador
+    - [ ] Definição dos estados do ciclo termodinâmico envolvidos na geração de eletricidade
+    - [ ] Consideração do diagrama de fase da água
+    - [ ] Consideração do diagrama do ciclo de Rankine
+    
+- [ ] Desafio 5: Determinar estado dos subprodutos da combustão
+    - [ ] Cálculo dos estados dos subprodutos gerados
+    - [ ] Consideração da liquefação da água ao final do processo
+    - [ ] Consideração da atividade dos íons na água liquefeita
+   
+- [ ] Desafio 6: Elaborar relatório final
+   
 
 Veja as pastas [Desafio 1](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%201), [Desafio 2](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%202), [Desafio 3](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%203) para ver os notebooks e arquivos dos respectivos desafios.
 <!-- Sobre mim -->
