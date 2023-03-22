@@ -134,7 +134,7 @@ As ferramentas utilizadas para desenvolver o projeto dessa disciplina foram, pri
 - [ ] Desafio 6: Elaborar relatório final
    
 
-Veja as pastas [Desafio 1](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%201), [Desafio 2](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%202), [Desafio 3](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%203) para ver os notebooks e arquivos dos respectivos desafios.
+Veja as pastas [Desafio 1](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%201), [Desafio 2](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%202), [Desafio 3](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%203), [Desafio 4](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%204), [Desafio 5](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%205), [Desafio 6 (Relatório Final)](https://github.com/benetao/Termodinamica_Avancada/tree/main/Desafio%206%20(Relat%C3%B3rio%20Final)) para ver os notebooks e arquivos dos respectivos desafios com suas resoluções. Se quiser vê-los no seu próprio computador, baixe a pasta inteira para conseguir rodar o código com as imagens.
 <!-- Sobre mim -->
 ## Sobre nós
 
