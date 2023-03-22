@@ -64,7 +64,7 @@
 <!-- Sobre a Disciplina e o Projeto -->
 ## Sobre a Disciplina <a name="sobre"></a>
 
-Na disciplina de Termodinâmica Avançada, ministrada pelo professor Amauri de Paula, nós- alunos- fomos desafiados a resolver um problema termodinâmico de um sistema composto por uma usina elétrica a vapor operando a partir da combustão de uma mistura líquida de combustíveis. Para resolvê-lo, devemos passar por várias etapas e desafios, que involvem temas centrais da termodiâmica, como:
+Na disciplina de Termodinâmica Avançada, ministrada pelo professor Amauri de Paula, nós- alunos- fomos desafiados a resolver um problema envolvendo um sistema composto por uma usina elétrica a vapor operando a partir da combustão de uma mistura líquida de combustíveis. Para resolvê-lo, devemos passar por várias etapas e desafios, que engloba temas centrais da termodinâmica, como:
 * `Energia interna` 
 * `Entalpia`
 * `Energia livre`
@@ -78,7 +78,7 @@ Na disciplina de Termodinâmica Avançada, ministrada pelo professor Amauri de P
 
 ### O Projeto <a name= "projeto"></a>
 
-Ao longo do desenvolvimento do problema representado na imagem abaixo, nós selecionamos todas as variáveis envolvidas a partir de considerações físico-químicas, determinamos os estados termodinâmicos do sistema, calculamos todos os parâmetros e variáveis numéricas do problema utilizando Python, estabelecemos um fluxograma (pipeline) que incorpora todos os cálculos necessários e que é adaptável à escolha de outros líquidos combustíveis, justifiquem todas as escolhas e soluções encontradas.
+Ao longo do desenvolvimento do problema representado na imagem abaixo, nós selecionamos todas as variáveis envolvidas a partir de considerações físico-químicas, determinamos os estados termodinâmicos do sistema, calculamos todos os parâmetros e variáveis numéricas do problema utilizando Python, estabelecemos um fluxograma (pipeline) que incorpora todos os cálculos necessários e que é adaptável à escolha de outros líquidos combustíveis, justificando sempre todas as escolhas e soluções encontradas.
 
 <div align="center">
   <a href="![neural](https://user-images.githubusercontent.com/106626661/225796535-51b41213-8397-435d-ab94-dc64551a2da1.gif)">
@@ -88,13 +88,13 @@ Ao longo do desenvolvimento do problema representado na imagem abaixo, nós sele
 
 ### Ferramentas <a name="ferramentas"></a>
 
-As ferramentas utilizadas para desenvolver o projeto dessa disciplina foram, principalmente, a plataforma Jupyter Notebook e a linguagem pyhton, na qual todos os códigos foram escritos.
+As ferramentas utilizadas para desenvolver o projeto dessa disciplina foram, principalmente, as plataformas Github e Jupyter Notebook, em que escrevemos os cótigos usando a  linguagem Pyhton.
 </div>
 <div align="center">
+<img align="center" alt="Rafa-Python" height="60" width="60" src= https://user-images.githubusercontent.com/106626661/225802391-d24ac038-78b1-4b2d-8720-f5f9fb4dac9a.png>
  <img align="center" alt="Rafa-Python" height="70" width="70" src= https://user-images.githubusercontent.com/106626661/225802823-3edf4493-8191-433f-9152-7e73b941aadb.png>
  <img align="center" alt="Rafa-Python" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
- <img align="center" alt="Rafa-Python" height="60" width="60" src= https://user-images.githubusercontent.com/106626661/225802391-d24ac038-78b1-4b2d-8720-f5f9fb4dac9a.png>
-
+ 
 </div>
 
 
@@ -161,7 +161,7 @@ Quem são os alunos por trás desse projeto de Termodinâmica Avançada? Pois be
 <!-- ACKNOWLEDGMENTS -->
 ## Agradecimentos <a name="acknowledgments"></a>
 
-Sem a ajuda dos professores e técnicos da Ilum, nós não teriamos conseguido chegar até onde cheguamos! Por isso, agradecemos às seguintes pessoas que contribuíram para este projeto:
+Sem a ajuda dos professores e técnicos da Ilum, nós não teriamos conseguido chegar até onde chegamos! Por isso, agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 <table>
   <tr>
