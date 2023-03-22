@@ -28,7 +28,7 @@
   <h3 align="center">Repositório de Termodinâmica Avançada</h3>
 
   <p align="center">
-    Bem vindo ao nosso projeto da disciplina de Termodinâmica Avançada, do terceiro semestre da Ilum Escola de Ciência!
+    Bem vindo ao nosso projeto de Termodinâmica Avançada, disciplina do terceiro semestre da Ilum Escola de Ciência!
    
   </p>
 </div>
