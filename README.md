@@ -144,7 +144,7 @@ Quem são os alunos por trás desse projeto de Termodinâmica Avançada? Pois be
 - 📕 Estamos no terceiro semestre do Bacharelado em Ciência e Tecnologia da Ilum Escola de Ciência
 - 👨‍🔬 A Ilum é uma iniciativa da instituição social CNPEM (Centro Nacional de Pesquisa em Energia e Materiais)
 - 🔥 No curso, temos uma grade curricular bem interdisciplinar, que inclui a matéria de Termodinâmica Avançada
-- 🚗 Nosso objetivo, na disciplina, é compreender melhor processos termodinâmicos e suas aplicações na vida real
+- 🚗 Nosso objetivo, na disciplina, é entender melhor processos termodinâmicos e suas aplicações na vida real
 
 <!-- CONTATO -->
 ### Contatos <a name="contato"></a>
