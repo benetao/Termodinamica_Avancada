@@ -124,11 +124,6 @@ Quem são os alunos por trás desse projeto de Termodinâmica Avançada? Pois be
 <!-- CONTATO -->
 ### Contatos <a name="contato"></a>
 
-<div>
-  <a href="https://instagram.com/isa.beneti" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-  <a href = "mailto:isabela220039@ilum.cnpem.br"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/isabela-bento-beneti-044183236" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-  <a href="https://www.youtube.com/channel/UCvf7m3bDwbFaezDbe_Igg_w" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
 
 
 <!-- ACKNOWLEDGMENTS -->
