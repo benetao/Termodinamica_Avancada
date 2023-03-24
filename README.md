@@ -114,7 +114,7 @@ As ferramentas utilizadas para desenvolver o projeto dessa disciplina foram, pri
     - [ ] Determinação da separação da mistura
     - [ ] Determinação da não-idealidade das misturas
     - [ ] Determinação da temperatura mínima de ebulição da mistura
-    - [ ] Determinação de potenciais termodinâmicaos da reação de cobustão
+    - [ ] Determinação de potenciais termodinâmicos da reação de cobustão
     
 - [ ] Desafio 3: Fazer balanço estequiométrico e energético até etapa de aquecimento do boiler
     - [ ] Cálculo da quantidade de energia transferida para a caldeira
