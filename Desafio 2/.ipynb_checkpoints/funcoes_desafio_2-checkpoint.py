@@ -1,7 +1,3 @@
-def entalpia_de_form_mistura(frac_molar1, entalpia1, entalpia2, entalpia_mix):
-    frac_molar2 = 1 - frac_molar1
-    return entalpia1*frac_molar1 + entalpia2*frac_molar2 + entalpia_mix
-
 def massa_da_mistura(razao_vol, dens1, dens2):
     
     """ Essa função calcula a razão em massa de uma mistura de 2 substâncias a partir da razão volumétrica e da densidade de cada substância
@@ -17,3 +13,16 @@ def massa_da_mistura(razao_vol, dens1, dens2):
     massa1= razao_vol*dens1
     massa2= (100-razao_vol)*dens2
     return (massa1/(massa1+massa2))*100
+
+def volume_total_mistura(densidade_mistura, massa_total):
+    """ Essa função calcula o volume total de uma mistura
+    
+    Args:
+    densidade_mistura: Densidade da mistura (geralmente tabelada)
+    massa_total: massa total definida
+    
+    Retorna:
+    O volume total da mistura"""
+    
+    volume_total = massa_total/densidade_mistura
+    return volume_total
