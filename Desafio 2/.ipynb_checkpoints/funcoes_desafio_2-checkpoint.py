@@ -52,14 +52,31 @@ def encontra_valor_proximo(df, coluna, valor_desejado):
             
     return valor_proximo, index_valor_proximo
 
-def destilacao_fracionada(df, etapas):
+def destilacao_fracionada(df, etapas, frac):
     """Simula uma destilação fracionada a partir do diagrama de fases de uma mistura
     
     Args:
         df: dataframe do diagrama de fases
         etapas: número de etapas realizadas para separar a mistura
+        frac: fração inicial de etanol
         
     Return:
         Uma lista contendo a coordenada em x dos pontos críticos, uma lista contendo as coordenadas em y dos pontos críticos, a fração final do vapor
     """
-    
+    lista= []
+    primeiro_valor= encontra_valor_proximo(df, 'Mole Fraction', frac)
+    x2= primeiro_valor[0]
+    for _ in range (etapas):
+        primeiro_valor= encontra_valor_proximo(df, 'Mole Fraction', frac)
+        x= x2
+        index= primeiro_valor[1]
+        y= df['C'][index]
+        lista.append([x,y])
+        
+        segundo_valor= encontra_valor_proximo(df, 'C', y)
+        y2= y
+        index2= segundo_valor[1]
+        x2= df['Mole Fraction.1'][index]
+        lista.append([x2,y2])
+        frac= x2
+    return lista
