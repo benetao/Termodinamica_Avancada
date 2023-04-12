@@ -26,3 +26,40 @@ def volume_total_mistura(densidade_mistura, massa_total):
     
     volume_total = massa_total/densidade_mistura
     return volume_total
+
+def encontra_valor_proximo(df, coluna, valor_desejado):
+    """Encontra o valor mais próximo de um determinado número em um conjunto de dados
+    
+    Args:
+        df: um pandas dataframe
+        coluna: uma coluna do dataframe
+        valor_desejado: o número que se quer encontrar
+    
+    Return:
+        O valor mais próximo presente no conjunto de dados e o seu index
+    """
+    valor_proximo = None
+    diferenca_minima = None
+    index = 0
+    for valor in df[coluna]:
+        diferenca = abs(valor - valor_desejado)
+        if diferenca_minima is None or diferenca < diferenca_minima:
+            diferenca_minima = diferenca
+            valor_proximo = valor
+            index_valor_proximo = index
+            
+        index = index + 1
+            
+    return valor_proximo, index_valor_proximo
+
+def destilacao_fracionada(df, etapas):
+    """Simula uma destilação fracionada a partir do diagrama de fases de uma mistura
+    
+    Args:
+        df: dataframe do diagrama de fases
+        etapas: número de etapas realizadas para separar a mistura
+        
+    Return:
+        Uma lista contendo a coordenada em x dos pontos críticos, uma lista contendo as coordenadas em y dos pontos críticos, a fração final do vapor
+    """
+    
