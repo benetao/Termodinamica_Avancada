@@ -63,9 +63,9 @@ def destilacao_fracionada(df, etapas, frac):
     Return:
         Uma lista contendo a coordenada em x dos pontos críticos, uma lista contendo as coordenadas em y dos pontos críticos, a fração final do vapor
     """
-    lista= []
-    primeiro_valor= encontra_valor_proximo(df, 'Mole Fraction', frac)
-    x2= primeiro_valor[0]
+    lista= [] # lista que vai conter as tuplas com as coordenadas dos pontos
+    primeiro_valor= encontra_valor_proximo(df, 'Mole Fraction', frac) # acha, no dataframe, o valor mais próximo da fração inicial na função
+    x2= primeiro_valor[0] # primeiro valor 
     for _ in range (etapas):
         primeiro_valor= encontra_valor_proximo(df, 'Mole Fraction', frac)
         x= x2
@@ -80,3 +80,33 @@ def destilacao_fracionada(df, etapas, frac):
         lista.append([x2,y2])
         frac= x2
     return lista
+
+def intermediario(partida, chegada, passo_x, passo_y):
+    lista = []
+    intermediario = partida
+    if partida[0] == chegada[0]:
+        while intermediario[1] > chegada[1]:
+            lista.append(intermediario)
+            y = intermediario[1] - passo_y
+            intermediario = (intermediario[0], y)
+        lista.append(chegada)
+        
+    if partida[1] == chegada[1]:
+        while intermediario[0] < chegada[0]:
+            lista.append(intermediario)
+            x = intermediario[0] + passo_x
+            intermediario = (x, intermediario[1])
+        lista.append(chegada)
+        
+    return lista
+
+
+def caminho(lista_criticos, passo_x, passo_y):
+    lista_final = []
+    for t in range(len(lista_criticos)-1):
+        partida = lista_criticos[t]
+        chegada = lista_criticos[t + 1]
+        lista_final = lista_final + intermediario(partida, chegada, passo_x, passo_y)
+        
+    return lista_final
+        
