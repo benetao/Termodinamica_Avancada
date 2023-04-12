@@ -1,4 +1,5 @@
-def massa_da_mistura(razao_vol, dens1, dens2):
+import matplotlib.pyplot as plt
+def porcentagem_em_massa(razao_vol, dens1, dens2):
     
     """ Essa função calcula a razão em massa de uma mistura de 2 substâncias a partir da razão volumétrica e da densidade de cada substância
     
@@ -12,7 +13,8 @@ def massa_da_mistura(razao_vol, dens1, dens2):
     
     massa1= razao_vol*dens1
     massa2= (100-razao_vol)*dens2
-    return (massa1/(massa1+massa2))*100
+    porcentagem_em_massa= (massa1/(massa1+massa2))*100
+    return porcentagem_em_massa
 
 def volume_total_mistura(densidade_mistura, massa_total):
     """ Essa função calcula o volume total de uma mistura
@@ -82,6 +84,17 @@ def destilacao_fracionada(df, etapas, frac):
     return lista
 
 def intermediario(partida, chegada, passo_x, passo_y):
+    """Cria pontos intermediários entre 2 pontos críticos da destilação fracionada, a fim de criar um gif mais fluido
+    
+    Args:
+        partida: tupla com as coordenadas do ponto de partida
+        etapas: tupla com as coordenadas do ponto de chegada
+        passo_x: valor que cada frame andará, se estiver variando em x
+        passo_y: valor que cada frame andará, se estiver variando em y
+        
+    Return:
+        Lista com listas que contêm as coordenadas dos pontos intermediários entre os pontos de partida e chegada
+    """
     lista = []
     intermediario = partida
     if partida[0] == chegada[0]:
@@ -102,6 +115,16 @@ def intermediario(partida, chegada, passo_x, passo_y):
 
 
 def caminho(lista_criticos, passo_x, passo_y):
+    """Cria intermediários entre TODOS os pontos da destilação fracionada
+    
+    Args:
+        lista_criticos: lista com listas que contêm as coordenadas de todos os pontos críticos da destilação fracionada
+        passo_x: valor que cada frame andará, se estiver variando em x
+        passo_y: valor que cada frame andará, se estiver variando em y
+        
+    Return:
+        Lista com listas que contêm as coordenadas de TODOS os pontos críticos e intermediários
+    """
     lista_final = []
     for t in range(len(lista_criticos)-1):
         partida = lista_criticos[t]
@@ -110,3 +133,30 @@ def caminho(lista_criticos, passo_x, passo_y):
         
     return lista_final
         
+def create_frame(t, x, y, df_diagrama):
+    """Cria um frame para o gif
+    
+    Args:
+        t: "index" do frame que está sendo criado
+        x: lista de coordenadas x
+        y: lista de coordenadas y
+        df_diagrama: dataframe do diagrama de fases, que será plotado "de fundo"
+        
+    Return:
+        O frame t para o gif
+    """
+    fig = plt.figure()
+    ax1 = fig.add_subplot(111)
+    df_diagrama.plot('Mole Fraction','C',legend=True, label = "Temperatura de Ebulição", ax=ax1, kind = 'line', color = 'black') # Plotando Temperatura de ebulição
+    df_diagrama.plot('Mole Fraction.1','C',legend=True, label = "Composição do Vapor", ax=ax1, kind = 'line', color = 'gray') # Plotando composição do vapor
+    plt.title('Diagrama de Fases - Etanol e Água') # Definindo título do gráfico
+    plt.xlabel('Fração Molar de Etanol') # Definindo legendas dos eixos
+    plt.ylabel('Temperatura (°C)')
+    
+    plt.plot(x[:(t+1)], y[:(t+1)], color = 'grey' )
+    plt.plot(x[t], y[t], color = 'black', marker = 'o' )
+    plt.savefig(f'./Figuras - Desafio 2/img_{t}.png', 
+                transparent = False,  
+                facecolor = 'white'
+               )
+    plt.close()
