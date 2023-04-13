@@ -110,8 +110,8 @@ As ferramentas utilizadas para desenvolver o projeto dessa disciplina foram, pri
     - [x] Definição do Diagrama de Fases da Mistura
     
 - [ ] Desafio 2: Determinar parâmetros termodinâmicos envolvidos na combustão
-    - [ ] Determinação do volume da mistura de líquidos
-    - [ ] Determinação da separação da mistura
+    - [x] Determinação do volume da mistura de líquidos
+    - [x] Determinação da separação da mistura
     - [ ] Determinação da não-idealidade das misturas
     - [ ] Determinação da temperatura mínima de ebulição da mistura
     - [ ] Determinação de potenciais termodinâmicos da reação de cobustão
