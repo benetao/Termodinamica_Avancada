@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 def porcentagem_em_massa(razao_vol, dens1, dens2):
     
     """ Essa função calcula a razão em massa de uma mistura de 2 substâncias a partir da razão volumétrica e da densidade de cada substância
@@ -160,3 +161,13 @@ def create_frame(t, x, y, df_diagrama):
                 facecolor = 'white'
                )
     plt.close()
+    
+def delta_S_mistura(x):
+    """ Função que calcula variação de entropia de uma mistura a partir da fração molar de etanol na mesma
+    Args: 
+    x: fração molar de etanol na mistura
+        
+    Return: valor de variação de entropia nessa fração molar"""
+    R= 8.31  #J/K*mol (Constante dos gases)
+    a= 1-x
+    return -(R*(x*np.log(x)+a*np.log(a)))
