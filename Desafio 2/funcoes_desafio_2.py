@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+
 def porcentagem_em_massa(razao_vol, dens1, dens2):
     
     """ Essa função calcula a razão em massa de uma mistura de 2 substâncias a partir da razão volumétrica e da densidade de cada substância
@@ -171,3 +172,104 @@ def delta_S_mistura(x):
     R= 8.31  #J/K*mol (Constante dos gases)
     a= 1-x
     return -(R*(x*np.log(x)+a*np.log(a)))
+
+def metodo_bisseccao(f, y_valor, intervalo):
+    """ Função que calcula um valor aproximado no domínio relacionado a um valor da imagem para uma função
+    
+    Args:
+        p: Função utilizada
+        y: Valor da imagem
+        intervalo: intervalo que se encontra o valor
+        
+    Return:
+        O valor de domínio da imagem corresponde ao valor da imagem
+    """
+    x_chute = 100
+    x_chute_novo = 0
+    intervalo_func = [f(intervalo[0]) > 0, f(intervalo[1]) > 0]
+    y = 1
+    while round(y, 4) != y_valor:
+            
+        intervalo_func = [f(intervalo[0]), f(intervalo[1])]
+        
+        if intervalo_func[0] == y_valor:
+            print("o resultado é", intervalo[0])
+            break
+            
+        if intervalo_func[1] == y_valor:
+            print("o resultado é", intervalo[1])
+            break
+        
+        x_chute = x_chute_novo
+        y = f(x_chute)
+        if intervalo_func[1] > y:    
+            if y > y_valor:
+                x_chute_novo = (intervalo[0] + x_chute)/2
+                intervalo = [intervalo[0], x_chute]
+            elif y < y_valor:
+                x_chute_novo = (intervalo[1] + x_chute)/2
+                intervalo = [x_chute, intervalo[1]]
+        elif intervalo_func[0] > 0:
+            if y < y_valor:
+                x_chute_novo = (intervalo[0] + x_chute)/2
+                intervalo = [intervalo[0], x_chute]
+            elif y > y_valor:
+                x_chute_novo = (intervalo[1] + x_chute)/2
+                intervalo = [x_chute, intervalo[1]]
+                
+    return x_chute_novo
+
+def conversor_frac_molar_para_porc_massa(x_1, mm_1, mm_2):
+    
+    """ Essa função calcula a razão em massa de uma mistura de 2 substâncias a partir da fração molar e da massa molar de 2 substâncias.
+    
+    Args:
+    x_1: fração molar da substãncia 1
+    mm_1: massa molar da substância 1
+    mm_2: massa molar da substância 2
+    
+    Retorna: 
+    Razão em massa da mistura
+    """
+    return x_1*mm_1/(x_1*mm_1 + (1-x_1)*mm_2)
+
+def V_m_l(V_l, m_1, m_2, mm_1, mm_2):
+    """ Essa função calcula o volume molar de uma mistura líquida a partir do volume total, da massa e da massa molar das duas substâncias.
+    
+    Args:
+    V_1: volume total
+    m_1: massa da substância 1
+    m_2: massa da substância 2
+    mm_1: massa molar da substância 1
+    mm_2: massa molar da substância 2
+    
+    Retorna: 
+    Volume molar da mistura dos dois líquidos
+    """
+    return V_l/((m_1/mm_1) + (m_2/mm_2))
+
+def V_m_g_ideal(T, P):
+    """Calcula o volume molar de um gás a partir de sua temperatura e pressão, seguindo a lei dos gases ideais
+    
+    Args:
+        T: Temperatura do gás
+        P: Pressão do gás
+    
+    Retorna:
+    Volume molar do gás
+    """
+    R = 0.08206
+    return R*T/P
+
+def calor_latente_eq_clapeyron(Pv, T, delta_V_m):
+    """Calcula a quantidade de calor necessária para realizar uma evaporação isobárica utilizando a equação de Clapeyron
+    
+    Args:
+        Pv: Pressão de vapor da evaporação
+        T: Temperatura da evaporação
+        delta_V_m: Variação de volume molar da evaporação
+        
+    Retorna:
+        Variação de entalpia da evaporação (calor latente) (J/mol)
+    """
+    return Pv*T*delta_V_m*(8.314/0.08206)
