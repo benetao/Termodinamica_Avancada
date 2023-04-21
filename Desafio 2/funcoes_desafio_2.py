@@ -273,3 +273,21 @@ def calor_latente_eq_clapeyron(Pv, T, delta_V_m):
         Variação de entalpia da evaporação (calor latente) (J/mol)
     """
     return Pv*T*delta_V_m*(8.314/0.08206)
+
+def massa_hidrogenio(massa_agua, rendimento):
+    """Uma função que calcula a massa de hidrogênio gerada em uma eletrólise da água
+    
+    Args:
+        massa_agua: massa de água utilizada
+        rendimento: rendimento da eletrólise
+        
+    Return:
+        Um valor em kg correspondente a massa de hidrogênio produzida
+    """
+    mm_a = 18
+    mm_H2 = 2
+    n_a = massa_agua/mm_a
+    n_H2 = n_a*rendimento
+    massa_hidrogenio = n_H2*mm_H2
+    
+    return massa_hidrogenio
