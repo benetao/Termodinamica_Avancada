@@ -1,7 +1,5 @@
 import numpy as np
 
-def 
-
 def eficiencia_ciclo_carnot(tq,tf):
     """ Calcula a eficiência teórica do ciclo de Carnot a partir dos valores da fonte quente e da fonte fria
     
@@ -24,16 +22,20 @@ def entropia_por_temperatura_vapor(T, df, t_init, s_init):
     Return:
         Valor da entropia
     """
+    temp_col = df.keys()[0] # coluna da temperatura
+    calor_col = df.keys()[1] # coluna do calor específico
     
-    df = df.loc[df['temperatura'] <= T]
-    df = df.loc[df['temperatura'] >= t]
+    df = df.loc[df[temp_col] <= T] # cortando o dataframe na temperatura mais alta
+    df = df.loc[df[temp_col] >= t_init] # cortando o dataframe na temperatura mais baixa
     
-    cp = np.array(df['calor_especifico'])
-    t = np.array(df['temperatura'])
+    print(df)
     
-    f_t = cp/t
+    cp = np.array(df[calor_col]) # definindo a array de calor específico
+    t = np.array(df[temp_col]) + 273.15 # definindo a array de temperatura em kelvin
     
-    s_t = s_init + np.trapz(f_t, t)
+    f_t = cp/t # calculando a função que será integrada
+    
+    s_t = s_init + np.trapz(f_t, t) # calculando a entropia
     
     return s_t
 
@@ -49,17 +51,22 @@ def entalpia_por_temperatura(T, m, df, t_init, h_init):
     Return:
         Valor da entalpia
     """
-    df = df.loc[df['temperatura'] <= T]
-    df = df.loc[df['temperatura'] >= t]
+    temp_col = df.keys()[0]
+    calor_col = df.keys()[1]
     
-    cp = np.array(df['calor_especifico'])
-    t = np.array(df['temperatura'])
+    df = df.loc[df[temp_col] <= T]
+    df = df.loc[df[temp_col] >= t_init]
+    
+    print(df)
+    
+    cp = np.array(df[calor_col])
+    t = np.array(df[temp_col]) + 273.15
     
     f_t = cp
     
     h_t = h_init + m*np.trapz(f_t, t)
     
-    return h_init
+    return h_t
 
 def entalpia_boiler(T_init, T_evap, T_final, h_evap, m, df_liq, df_vap):
     """ Função que calcula a diferença de entalpia causada pelo boiler no ciclo de rankine
@@ -76,9 +83,9 @@ def entalpia_boiler(T_init, T_evap, T_final, h_evap, m, df_liq, df_vap):
     Return:
         Diferença de entalpia no boiler
     """
-    h_exp_liq = entalpia_por_temperatura(T_evap, m, df, T_init, 0)
+    h_exp_liq = entalpia_por_temperatura(T_evap, m, df_liq, T_init, 0)
     
-    h_exp_vap = entalpia_por_temperatura(T_final, m, df, T_evap, 0)
+    h_exp_vap = entalpia_por_temperatura(T_final, m, df_vap, T_evap, 0)
     
     h_boiler = h_exp_liq + m*h_evap + h_exp_vap
     
